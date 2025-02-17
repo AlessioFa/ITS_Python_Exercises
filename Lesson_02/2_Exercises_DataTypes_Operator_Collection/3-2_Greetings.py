@@ -4,7 +4,11 @@
 names: list[str] = ["Andrea", "Christian", "Simone", "Luana"]
 
 # Use indexing to access all the element in the list
-print(f"{names[0]} è davvero un bravo ragazzo!")
-print(f"{names[1]} è un ragazzo simpatico!")
-print(f"{names[2]} è un ragazzo particolare!")
-print(f"{names[3]} è una ragazza curiosa!")
+print(f"{names[0]} is a really good boy!")
+print(f"{names[1]} is a funny guy!")
+print(f"{names[2]} is a particoular but genuine guy!")
+print(f"{names[3]} is a curious girl!")
+
+# Solving the exercise using a for loop that iterate through the list
+for name in names:
+    print(f"{name} is a good friend!")

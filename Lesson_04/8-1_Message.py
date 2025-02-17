@@ -4,4 +4,5 @@
 def display_message():
     print("In this chapter i am learning how to create a function.")
 
+
 display_message()

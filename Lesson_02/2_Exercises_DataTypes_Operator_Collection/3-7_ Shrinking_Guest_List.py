@@ -18,7 +18,7 @@ dinner_invitation(guest_list)
 print("Shaquille O' Neal can't make it to the dinner. You'll receive a new invitation soon.\n")
 
 # Update the guest list, replacing the unavailable guest
-updated_guest_list: list[str] = ["Michael Jordan","Michael Phelps", "Jenses Huang", "Elon Musk"]
+updated_guest_list: list[str] = ["Michael Jordan", "Michael Phelps", "Jenses Huang", "Elon Musk"]
 
 # Call the function again to send the updated dinner invitations
 dinner_invitation(updated_guest_list)
