@@ -1,16 +1,16 @@
 # Exercise 4-11: My Pizzas, Your Pizzas
 
-# Lista delle pizze preferite
+# List of favourite pizzas
 favourite_pizzas: list[str] = ["margherita", "sausages and potatoes", "sausages and tomatoes"]
 
-# Creiamo una copia della lista favourite_pizzas per friend_pizzas
+# Create a copy of friend_pizzas for favourite_pizzas
 friend_pizzas = favourite_pizzas.copy()
 
-# Aggiungiamo pizze diverse alla lista friend_pizzas
+# Add different pizza to the list friend_pizzas
 friend_pizzas.append("prosciutto e mozzarella")
 friend_pizzas.insert(0, "carbonara")
 
-# Stampiamo entrambe le liste
+# print both the lists
 print("My favourite pizzas are:")
 for pizza in favourite_pizzas:
     print(f"- {pizza}")

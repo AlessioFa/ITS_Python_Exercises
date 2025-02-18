@@ -25,7 +25,7 @@ else:
 # Version 3: Alien color is red
 alien_color = "red"
 
-# Checking for a red alien
+# Check the alien's color and assign points
 if alien_color == "green":
     print("Player just earned 5 points for shooting the alien.")
 elif alien_color == "yellow":

@@ -2,6 +2,7 @@
 
 age: int = 29
 
+# Structures that determines a person's stage of life based on age
 if age < 2:
     print("You are a baby.")
 elif age >= 2 and age < 4:

@@ -4,6 +4,7 @@
 def describe_city(city: str, country: str = "Japan"):
     print(f"{city} is in {country}")
 
+
 # Call the function with the default country (Japan)
 describe_city("Tokyo")
 
