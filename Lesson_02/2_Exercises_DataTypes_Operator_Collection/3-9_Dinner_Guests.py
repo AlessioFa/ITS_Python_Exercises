@@ -17,3 +17,4 @@ dinner_invitation(guest_list)
 
 # Using len function to display the lenght of the list
 print(len(guest_list))
+
