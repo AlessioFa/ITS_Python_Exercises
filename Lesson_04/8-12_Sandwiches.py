@@ -1,6 +1,6 @@
 # Exercise 8-12: Sandwiches
 
-# Define a function that takes an 
+# Define a function that takes an indefinite nummber of arguments
 def item_s(*foods: str) -> None:
     ingredients = "Ingredients of your sandiwch: " + ", ". join(foods)
     print(ingredients)

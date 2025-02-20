@@ -5,4 +5,5 @@ def display_message():
     print("In this chapter i am learning how to create a function.")
 
 
+# Call the function
 display_message()
