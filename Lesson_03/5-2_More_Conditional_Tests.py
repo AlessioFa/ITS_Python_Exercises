@@ -59,7 +59,6 @@ print("banana" in fruits)
 print("\nIs 'grape' in fruits? I predict False.")
 print("grape" in fruits)
 
-# Test absence from a list
 # Test 13: Check if "cat" is not in the animals list
 print("\nIs 'cat' not in animals? I predict True.")
 print("cat" not in animals)
