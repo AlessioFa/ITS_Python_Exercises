@@ -5,7 +5,7 @@ guest_list: list[str] = ["Michael Jordan", "Michael Phelps", "Shaquille O' Neal"
 
 
 # Define a function that sends dinner invitations
-def dinner_invitation(guest: list[str]):
+def dinner_invitation(guest: list[str]) -> str:
     # Loop through the guest list and print the invitation for each guest
     for person in guest:
         print(f"Dear {person},\nI have always appreciated your work. As you are a true inspiration to me, i would love to invite you to dinner. Looking forward to your response,\n\nAlessio Farallo\n ")
