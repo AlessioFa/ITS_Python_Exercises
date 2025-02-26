@@ -13,3 +13,11 @@ print(f"I like {favorite_pizzas[1]} pizza.")
 print(f"I really like {favorite_pizzas[2]} pizza.")
 
 print("I really love pizza!")
+
+
+# Solve the exercise using while loop
+
+i = 1 
+while i < len(favorite_pizzas):
+    print(i)
+    i += 1
