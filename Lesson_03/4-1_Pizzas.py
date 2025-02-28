@@ -19,5 +19,5 @@ print("I really love pizza!")
 
 i = 1 
 while i < len(favorite_pizzas):
-    print(i)
+    print()
     i += 1

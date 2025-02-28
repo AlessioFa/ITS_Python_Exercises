@@ -5,7 +5,7 @@ position in cardinal form (e.g., "1st", "2nd", "3rd", "4th", "5th", etc.)."""
 # Solve the exercise with if-elif-else
 
 # Get the finishing position from the user input
-f_position = int(input("Enter your finishing position: "))
+f_position: int = int(input("Enter your finishing position: "))
 
 # Check if the position is 1 and print "st"
 if f_position == 1:
