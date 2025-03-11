@@ -1,7 +1,7 @@
 # Exercise 8-3: T-Shirt
 
 # Define a function that takes two parameters: size (str) and text (str)
-def make_shirt(size: str, text: str):
+def make_shirt(size: str, text: str) -> str:
     # Print the size of the shirt and the text to be printed on it
     print(f"This is the size of the shirt: {size}\nThis is going to be the message: {text}")
 

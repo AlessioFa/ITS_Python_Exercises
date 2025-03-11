@@ -1,7 +1,7 @@
 # Exercise 8-9: Messages
 
 # Define a function to show messages
-def show_messages(message: list[str]):
+def show_messages(message: list[str]) -> None:
     # Loop thorugh each message in the list
     for text in message:
         print(text)

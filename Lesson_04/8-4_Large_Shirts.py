@@ -1,7 +1,7 @@
 # Exercise 8-4: Large Shirts
 
 # Define the function with default values for size and text
-def make_shirts(size: str = "L", text: str = "I love Python!"):
+def make_shirts(size: str = "L", text: str = "I love Python!") -> str:
     # Print the size and the message of the shirt
     print(f"This is the size of the shirt: {size}\nThis is going to be the message: {text}")
 

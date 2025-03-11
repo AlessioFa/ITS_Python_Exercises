@@ -1,6 +1,6 @@
 # Exercise 8-7: Album
 
-def make_album(artist_name: str, album_title: str, songs_count=None):
+def make_album(artist_name: str, album_title: str, songs_count=None) -> dict[str, str | int]:
     # Create a dictionary containing the artist's name and album title
     album_info: dict[str, str | int] = {
         "artist_name": artist_name,

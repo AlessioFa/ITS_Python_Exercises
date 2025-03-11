@@ -1,7 +1,7 @@
 # Exercise 8_5: Cities
 
 # Define the function with a default country parameter
-def describe_city(city: str, country: str = "Japan"):
+def describe_city(city: str, country: str = "Japan") -> str:
     print(f"{city} is in {country}")
 
 

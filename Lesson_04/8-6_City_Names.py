@@ -1,7 +1,7 @@
 # Exercise 8-6: City Names
 
 # Define a function that returns the city and its country
-def city_country(city: str, country: str):
+def city_country(city: str, country: str) -> str:
     return (f"{city}, {country}")
 
 

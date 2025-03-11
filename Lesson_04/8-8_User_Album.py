@@ -1,6 +1,6 @@
 # Exercise 8-8: User Album
 
-def make_album(artist_name: str, album_title: str, songs_count=None):
+def make_album(artist_name: str, album_title: str, songs_count=None) -> dict[str, str | int]:
     # Create a dictionary containing the artist's name and album title
     album_info: dict[str, str | int] = {
         "artist_name": artist_name,
@@ -31,7 +31,7 @@ while True:
     if songs_count == "quit":
         break
 
-    # Call the make_album function to create a dictionary with the album information
+    # Call the make_album function to create a dictionary with the album info
     album1 = make_album(artist_name, album_title, songs_count)
 
     # Print the album information to show the dictionary output
