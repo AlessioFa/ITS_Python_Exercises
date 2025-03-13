@@ -2,7 +2,7 @@
 
 # Different method to import a file
 
-"""
+
 # 1
 
 import car_functions
@@ -14,7 +14,7 @@ print(car_detail)
 
 car_detail = make_car("subaru", "impreza", color="blue", tow_package=True)
 
-print(car_detail)"""
+print(car_detail)
 
 
 # 2
