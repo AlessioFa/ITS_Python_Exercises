@@ -30,7 +30,7 @@ while True:
 
         case "go out":
             print("You are now out of the program.")
-            break  
+            break
 
-        case _:  
+        case _:
             print("You have to insert a valid option like 'entrance', 'exit', 'state', or 'go out'.")
