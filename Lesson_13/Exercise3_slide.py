@@ -27,7 +27,7 @@ print(SumInRange(20, 10))
 
 
 
-def SumInRange2(x:  int, y: int):
+def SumInRange2(x: int, y: int):
     if x > y:
         x, y = y, x
     
@@ -39,14 +39,3 @@ def SumInRange2(x:  int, y: int):
     return total
 
 print(SumInRange2(10,20))
-
-
-
-
-
-
-        
-
-
-
-
