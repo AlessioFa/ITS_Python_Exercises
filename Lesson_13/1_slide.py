@@ -14,7 +14,6 @@ Error! Inserted number is negative!
 0
 """
 
-
 def countdown(n: int):
     if n < 0:
         print("Error: the entered number is negative.")
@@ -27,4 +26,3 @@ def countdown(n: int):
 countdown(-10)
 
 countdown(10)
-
