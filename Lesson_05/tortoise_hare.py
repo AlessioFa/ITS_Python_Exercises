@@ -15,7 +15,7 @@ def position(tortoise_pos, hare_pos):
     print(f"The current position of tortoise is {tortoise_pos}\nThe current position of the hare is: {hare_pos}")
 
 
-position()
+position(tortoise_pos=1, hare_pos=1)
 
 
 def tortoise_movement(current_pos: int):
@@ -60,3 +60,8 @@ hare_pos: int = 1
 
 
 print(f"'BANG!!! AND THEY'RE OFF!!!!!\n")
+
+
+corsie: int = [_] * 70
+
+print(corsie)

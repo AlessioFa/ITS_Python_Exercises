@@ -1,0 +1,55 @@
+.background
+{
+    background-color: #b7ebaf;
+}
+
+
+.top-background
+{
+    background-color: hsl(0, 0%, 83%);
+}
+
+
+.main-container
+{
+    background-color: white;
+    width: 25cm;
+}
+
+
+.top-table
+{
+    height: 4vh;
+}
+
+
+.paragraph-title
+{
+    font-weight: bolder;
+}
+
+
+.service-description
+{
+    font-weight: thin;
+}
+
+
+.book-title
+{
+    background-color: #f1f1f1;
+    font-weight: bolder;
+}
+
+
+.tableContent
+{
+    background-color: #f1f1f1;
+}
+
+
+.tableDisponibility
+{
+    color: green;
+    background-color: #f1f1f1; 
+}

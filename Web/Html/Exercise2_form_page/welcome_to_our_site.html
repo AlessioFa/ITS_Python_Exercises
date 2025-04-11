@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+    <h1>Welcome to Our Site!</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    </p>
+
+    <h2>Create a New Account</h2>
+    <form>
+        <input type="text" name="Name" placeholder="Name" required/>
+        <input type="text" name="Surname" placeholder="Surname" required/><br>
+        <input type="text" name="Your e-mail address" placeholder="Your e-mail address" required/><br>
+        <input type="text" name="New password" placeholder="New password" required/><br>
+
+        <label>
+            <input type="radio" name="gender" value="Male" required/> Male
+        </label>
+        
+        <label>
+            <input type="radio" name="gender" value="Female" required/> Female
+        </label><br><br>
+
+        How did you find out about the website?
+        <select name="How did you find out about the website?" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="RBF">Recommended by friends</option>
+        <option value="FTAS">Found through a search engine</option>
+        <option value="TSM">Through social media</option>
+        </select><br>
+
+        <h2>Tell us about you!</h2>
+
+        <textarea name="userInfo" rows="4" cols="50" required></textarea><br>
+
+        <label>
+            <input type="checkbox" name="accept_terms" value="TermAndConditions" required>
+            I accept the <a href="terms_and_conditions.html" target="_blank">terms and conditions</a>
+        </label><br>
+
+        
+        <input type="submit" name="create_account" value="Create Account">
+
+    </form>
+
+    </body>
+</html>
