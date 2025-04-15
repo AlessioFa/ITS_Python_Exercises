@@ -31,7 +31,7 @@ coin_cross: int = 0
 total_coin_toss: int = 0
 
 while total_coin_toss < 8:
-    
+
     user_coin_toss = input("Toss a coin ( enter c/C for cross, h/H for head):").strip()
 
     if user_coin_toss not in ["c", "C", "h", "H"]:

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esempio DOM</title>
+</head>
+    <body>
+       <h1 id="title"> welcome!</h1>
+       <button id="changeText">Click on me</button> 
+
+
+       <script>
+        // I take the buton with "changetext" id    
+        var button = document.getElementById("changeText");
+
+        // When i click on it, this function is going to be executed
+        button.addEventListener("click", function(){
+            // I change the contenuto of the h1 tag with the id "title"
+            document.getElementById("title").innerHTML = "You clicked the button!";
+        });
+        </script>
+
+
+    </body>
+</html>

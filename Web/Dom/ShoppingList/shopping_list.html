@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping List</title>
+  <style>
+    body {
+      background: radial-gradient(circle at center, #ffffff 0%, #e6f2f8 100%);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      min-height: 100vh;
+    }
+    .title {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-align: left;
+    }
+    .logo {
+      width: 200px;
+      margin-bottom: 20px;
+    }
+    #list-container {
+      text-align: center;
+      padding: 20px;
+    }
+    #list {
+      margin-top: 10px;
+    }
+    input {
+      padding: 10px;
+      margin-right: 10px;
+    }
+    button {
+      padding: 10px;
+      margin: 5px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div><img src="Logo.png" alt="Logo" class="logo"></div>
+  <h1 class="title">My Shopping List</h1>
+  <div id="list-container">
+    <input type="text" id="product" placeholder="Enter product name">
+    <button id="add">Add</button>
+    <button id="clear">Clear List</button>
+    <ul id="list"></ul>
+  </div>
+  <script>
+    var input = document.getElementById("product");
+    var addButton = document.getElementById("add");
+    var clearButton = document.getElementById("clear");
+    var list = document.getElementById("list");
+
+    addButton.onclick = function() {
+      var text = input.value;
+      if (text !== "") {
+        var listItem = document.createElement("li");
+        listItem.textContent = text;
+        list.appendChild(listItem);
+        input.value = "";
+      }
+    };
+
+    clearButton.onclick = function() {
+      list.innerHTML = "";
+    };
+  </script>
+</body>
+</html>

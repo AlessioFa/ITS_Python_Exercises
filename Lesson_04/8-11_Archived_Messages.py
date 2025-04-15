@@ -5,16 +5,16 @@
 # Define a function that takes messages form a list and puts them in another one
 def show_messages(phrases: list[str]) -> list[str]:
     new_short_messages = []
-    
+
     while len(phrases) > 0:
         message = phrases.pop()
         new_short_messages.append(message)
-    
+
     print("Final list: ", new_short_messages)
-    
+
     if len(phrases) == 0:
         new_list_copy = new_short_messages.copy()
-    
+
     print("Copy of the final list : ", new_list_copy)
 
 
