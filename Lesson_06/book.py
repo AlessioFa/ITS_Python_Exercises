@@ -26,12 +26,28 @@ class Book:
     def lenght(self):
         return self.pages >= 300
     
+class Library:
+    def __init__ (self, books=None):
+        if books is None:
+            books = []
+        self.books = books
     
-            
+
+    def add_book(self, book):
         
+
+
+
+
+
+
+
+
     
 
 libretto = Book("La magia dell' ITS", "Federico March", "1995", 299)
 
 print(libretto.lenght())
+
+
 

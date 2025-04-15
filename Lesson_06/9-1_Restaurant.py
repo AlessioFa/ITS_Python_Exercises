@@ -1,3 +1,5 @@
+# Exercise 9.1: Restaurant
+
 class Restaurant:
     def __init__(self, restaurant_name: str, cousine_type: str):
         self.restaurant_name = restaurant_name

@@ -26,4 +26,22 @@ def recursiveSumInRange(a: int, b: int) -> int:
     
 
 print(recursiveSumInRange(10, 20))
+
+
+# Alternative Method
+
+def recursiveSumInRange(a: int, b: int) -> int:
+    # If a > b, swap the values
+    if a > b:
+        a, b = b, a
     
+    # Base case, if a == b we return a 
+    if a == b:
+        return a
+    
+    # Passaggio ricorsivo: sommiamo b e chiamiamo la funzione con b-1
+    return b + recursiveSumInRange(a, b - 1)
+    
+    # casting is not necessary
+    # this swap method is more clear
+
