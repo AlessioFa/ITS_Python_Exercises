@@ -18,7 +18,7 @@ class Persona:
             print(f"{self.name} {self.lastname} e' minorenne!")
         elif 18 <= self.age < 30:
             print(f"{self.name} {self.lastname} e' maggiorenne!")
-        elif 30<= self.age < 80:
+        elif 30 <= self.age < 80:
             print(f"{self.name} {self.lastname} e' una persona adulta!")
         else:
             print(f"{self.name} {self.lastname} e' una persona anziana!")
