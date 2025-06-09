@@ -28,7 +28,7 @@ Le funzioni non devono stampare nulla a schermo, ma restituire la stringa cifrat
 decifrata."""
 
 
-def caesar_cypher_encrypt(s: str, key: int) -> str:
+def caesar_cipher_encrypt(s: str, key: int) -> str:
     
     encrypted_text: str = ""
 
@@ -48,7 +48,7 @@ def caesar_cypher_encrypt(s: str, key: int) -> str:
     return encrypted_text
 
 
-def caesar_cypher_decrypt(s: str, key: int) -> str:
+def caesar_cipher_decrypt(s: str, key: int) -> str:
     decrypted_text: str = ""
 
     for letter in s:
@@ -67,8 +67,8 @@ def caesar_cypher_decrypt(s: str, key: int) -> str:
     return decrypted_text
 
 
-encrypted = caesar_cypher_encrypt("Parole Random!", 3)
+encrypted = caesar_cipher_encrypt("Parole Random!", 3)
 print("Encrypted text:", encrypted)
 
-decrypted = caesar_cypher_decrypt(encrypted, 3)
+decrypted = caesar_cipher_decrypt(encrypted, 3)
 print("Decrypted:", decrypted)
