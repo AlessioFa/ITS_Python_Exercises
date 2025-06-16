@@ -1,4 +1,7 @@
+# Exercise 2: Guess the Number Game
+
 import random
+
 """
     Create a function that generates a random number within a range specified by the user.
     Prompt the user to guess the number within a specified maximum number of attempts.
@@ -8,9 +11,9 @@ import random
 
 
 def guess_the_number() -> None:
-    user_name: str = input("Please, enter your name: ")
+    user_name: str = input("Please, enter your name: ").title()
 
-    print(f"{user_name.title()}, welcome to 'Guess the number'! A game where you can decide a specific range of numbers and guess a number!\n")
+    print(f"{user_name.title}, welcome to 'Guess the number'! A game where you can decide a specific range of numbers and guess a number!\n")
 
     guesses: int = int(input("How many guesses do you want to have?: "))
 

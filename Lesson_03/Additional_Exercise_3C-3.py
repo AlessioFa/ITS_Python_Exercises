@@ -1,11 +1,16 @@
-object_list: list[str] = []
+objects: list[str] = []
+
 while True:
     your_object = input("Enter some objects:").lower()
+    
     if your_object == "stop":
         break
-    object_list.append(your_object)
+    
+    objects.append(your_object)
 
-match object_list:
+
+match objects:
+
     case ["penna", "matita", "quaderno"]:
         print(f"['penna', 'matita', 'quaderno']\nSchool supplies")
     

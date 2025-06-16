@@ -16,17 +16,19 @@ user_input: str = input("Enter a name of an animal: ").lower()
 match user_input:
     case user_input if user_input == "dog" or "cat" or "horse" or "elephant" or "lion":
         print(f"{user_input} is in the mammals category.")
+
     case user_input if user_input == "serpent" or "lizard" or "tortoise" or "cocodrille":
         print(f"{user_input} is in the reptiles category.")
+
     case user_input if user_input == "eagle" or "parot" or "howl" or "falcon":
         print(f"{user_input} is in the category of birds.")
+
     case user_input if user_input == "shark" or "trout" or "salmon" or "carp":
         print(f"{user_input} is in the category of fishes.")
 
 
 
 # Same exercise using lists
-
 
 user_animal: list[str] = input("Enter a name of an animal: ").lower()
 
@@ -38,9 +40,12 @@ fishes: list[str] = ["shark", "trout", "salmon", "carp"]
 match user_animal:
     case user_animal if user_animal in mammals:
         print(f"{user_animal} is in the category of mammals.")
+
     case user_animal if user_animal in reptiles:
         print(f"{user_animal} is in the category of reptiles.")
+
     case user_animal if user_animal in birds:
         print(f"{user_animal} is in the category of birds.")
+
     case user_animal if user_animal in fishes:
         print(f"{user_animal} is in the category of fishes.")

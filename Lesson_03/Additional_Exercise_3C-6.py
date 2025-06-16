@@ -25,60 +25,77 @@ Tenere in considerazione il fatto che alcuni animali tra quelli specificati poss
 Suggeirmento: può essere utile per coprire tutti i possibili casi implementare istruzioni match annidate.
 """
 
-
+# Ask the user to enter the name and habitat of an animal
 animal_name: str = input("Enter a name of an animal: ").lower()
 animal_habitat: str = input(f"Enter the habitat of the {animal_name}: ")
 
-
+# Define lists of animals by type
 mammals: list[str] = ["dog", "cat", "horse", "elephant", "lion", "whale", "dolphin"]
-reptiles: list[str] = ["snake", "lizard", "tortoise", "crocodrille"]
-birds: list[str] = ["eagle", "parrot", "owl", "falcon", "swan","duck", "hen", "turkey" ]
+reptiles: list[str] = ["snake", "lizard", "tortoise", "crocodile"]
+birds: list[str] = ["eagle", "parrot", "owl", "falcon", "swan","duck", "hen", "turkey"]
 fishes: list[str] = ["shark", "trout", "salmon", "carp"]
 
+"Initialize animal type as empty."
 animal_type: str = ""
 
+# Determine the animal type
 match animal_name:
     case name if name in mammals:
         animal_type = "mammal"
+
     case name if name in reptiles:
         animal_type = "reptile"
+
     case name if name in birds:
         animal_type = "bird"
+
     case user_animal if user_animal in fishes:
         animal_type = "fish"
 
+# Store the animal information in a dictionary
 animal_dict: dict = {"Animal": animal_name, "Type": animal_type, "Habitat": animal_habitat}
 
+# E valuate if the animal can live in the entered habitat
 match animal_type:
     case "mammal":
         match animal_habitat:
             case "land" if animal_name not in ["whale", "dolphin"]:
                 print(f"{animal_name} can live on land.")
+
             case "water" if animal_name in ["whale", "dolphin"]:
                 print(f"{animal_name} can live in water.")
+
             case _:
                 print(f"{animal_name} cannot live in habitat {animal_habitat}.")
+
     case "reptile":
         match animal_habitat:
             case "land":
                 print(f"{animal_name} can live on land.")
+
                 if animal_name in ["tortoise", "crocodile"]:
                     print(f"{animal_name} can live in water.")
+
             case _:
-                print(f"{animal_name} cannot live in {animal_habitat}.")        
+                print(f"{animal_name} cannot live in {animal_habitat}.")     
+
     case "bird":
         match animal_habitat:
             case "land":
                 if animal_name not in ["swan", "duck"]:
                     print(f"{animal_name} can live on land.")
+
             case "water":
                 if animal_name in ["swan", "duck"]:
                     print(f"{animal_name} can live in water.")
+
             case _:
                 print(f"{animal_name} cannot live in {animal_habitat}.")
+
     case "fish":
         match animal_habitat:
             case "water":
                 print(f"{animal_name} can live in water.")
+
             case _:
                 print(f"{animal_name} cannot live in {animal_habitat}.")

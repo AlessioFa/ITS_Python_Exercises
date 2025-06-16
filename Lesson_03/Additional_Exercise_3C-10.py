@@ -23,7 +23,6 @@ Output: Nessuna festività importante in questa data.
 Last modified: Friday, 28 February 2025, 2:50 PM"""
 
 
-
 day_user: int = int(input("Enter a date (day): "))
 month_user: int = int(input("Enter a date (month): "))
 

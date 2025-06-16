@@ -4,7 +4,7 @@
 person: dict[str, str | int] = {"first_name": "Andrea", "last_name": "Montanari", "age": "29", "city": "Rome"}
 
 
-print(f"THese are all the person's detail.\nFirst Name: {person['first_name']}\nLast Name: {person['last_name']}\nAge: {person['age']}\nCity: {person['city']}")
+print(f"These are all the person's detail.\nFirst Name: {person['first_name']}\nLast Name: {person['last_name']}\nAge: {person['age']}\nCity: {person['city']}")
 
 
 # Doing the same exercise using for loop
