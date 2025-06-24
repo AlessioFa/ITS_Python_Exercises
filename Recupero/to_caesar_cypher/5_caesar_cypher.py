@@ -1,4 +1,4 @@
-from string import ascii_lowercase
+from string import ascii_lowercase, ascii_uppercase
 """Cifrario di Cesare
 Il cifrario di Cesare è un antico metodo crittografico che rende alcune informazioni nascoste
 a chi non possiede la chiave per decifrarle.
@@ -29,7 +29,7 @@ decifrata."""
 
 
 def caesar_cipher_encrypt(s: str, key: int) -> str:
-    
+
     encrypted_text: str = ""
 
     for letter in s:
@@ -41,15 +41,23 @@ def caesar_cipher_encrypt(s: str, key: int) -> str:
 
             encrypted_text += ascii_lowercase[letter_new_position]
 
-        else:
+        elif letter in ascii_uppercase:
 
+            letter_position: int = ascii_uppercase.index(letter)
+
+            letter_new_position: int = (letter_position + key) % 26
+
+            encrypted_text += ascii_uppercase[letter_new_position]
+
+        else:
             encrypted_text += letter
-        
+
     return encrypted_text
 
 
 def caesar_cipher_decrypt(s: str, key: int) -> str:
-    decrypted_text: str = ""
+
+    encrypted_text: str = ""
 
     for letter in s:
         if letter in ascii_lowercase:
@@ -58,17 +66,24 @@ def caesar_cipher_decrypt(s: str, key: int) -> str:
 
             letter_new_position: int = (letter_position - key) % 26
 
-            decrypted_text += ascii_lowercase[letter_new_position]
+            encrypted_text += ascii_lowercase[letter_new_position]
+
+        elif letter in ascii_uppercase:
+
+            letter_position: int = ascii_uppercase.index(letter)
+
+            letter_new_position: int = (letter_position + key) % 26
+
+            encrypted_text += ascii_uppercase[letter_new_position]
 
         else:
+            encrypted_text += letter
 
-            decrypted_text += letter
-        
-    return decrypted_text
+    return encrypted_text
 
 
-encrypted = caesar_cipher_encrypt("Parole Random!", 3)
-print("Encrypted text:", encrypted)
+encrypted = caesar_cipher_encrypt("°é*Trying to encry/pt a? phras_e!!", 12)
+print("Encrypted text: ", encrypted)
 
-decrypted = caesar_cipher_decrypt(encrypted, 3)
-print("Decrypted:", decrypted)
+decrypted = caesar_cipher_decrypt(encrypted, 12)
+print("Decrypted text: ", decrypted)
