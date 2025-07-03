@@ -28,7 +28,7 @@ def word_checker() -> str:
 
         user_word: str = input("Enter a sequence of word: ")
 
-        if len(user_word) > 20:
+        if len(user_word) >= 20:
             continue
 
         if not user_word:
@@ -46,11 +46,12 @@ def word_checker() -> str:
 
         word_list.append(user_word)
 
-        
+        s_max = max(word_list, key=len)
 
     print(word_list)
 
     print(f"You entered {len(word_list)} different names.")
+    print(f"The longest is {s_max} with {len(s_max)} characters.")
 
 
 word_checker()
