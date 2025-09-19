@@ -29,7 +29,7 @@ class Doctor(Person):
         if not isinstance(fee, float):
             print("The entered fee is not valid!")
     
-    def setSpecialization(self, specialization: str):
+    def set_specialization(self, specialization: str):
         
         if not isinstance(specialization, str):
             print("The entered specialization is not a string!")
@@ -37,7 +37,7 @@ class Doctor(Person):
         else:
             self.__specialization = specialization
         
-    def setParcel(self, parcel: float) -> float:
+    def set_parcel(self, parcel: float) -> float:
         
         if not isinstance(parcel, float):
             print("The entered parcel is not a float!")
@@ -45,7 +45,7 @@ class Doctor(Person):
         else:
             self.__parcel = parcel
         
-    def getSpecialization(self):
+    def get_specialization(self):
 
         return self.__specialization
     
@@ -53,15 +53,15 @@ class Doctor(Person):
 
         return self.__parcel
     
-    def isAValidDoctor(self) -> str:
+    def is_a_validDoctor(self) -> str:
 
-        if self.getAge() < 30:
+        if self.get_age() < 30:
             print(f"Doctor {self.first_name} {self.last_name} is valid!")
         
         else:
             print(f"Doctor {self.first_name} {self.last_name} is not valid!")
     
-    def doctorGreet(self):
+    def doctor_greet(self):
 
         self.greet()
 

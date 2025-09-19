@@ -11,7 +11,7 @@ class Patient(Person):
         else:
             self.__id = id
 
-    def setIdCode(self, id: str):
+    def set_id_code(self, id: str):
 
         if isinstance(id, str):
             self.__id = id
@@ -20,10 +20,10 @@ class Patient(Person):
             print("Your id must be a string!")
 
     
-    def getIdCode(self) -> str:
+    def get_id_code(self) -> str:
 
         return self.__id
 
-    def patientInfo(self):
+    def patient_info(self):
 
-        print(f"Patient: {self.first_name} {self.last_name}\nID: {self.getIdCode()}")
+        print(f"Patient: {self.first_name} {self.last_name}\nID: {self.get_id_code()}")

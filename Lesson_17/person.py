@@ -26,7 +26,7 @@ class Person:
         else:
             self.age = None
     
-    def setName(self, first_name: str):
+    def set_name(self, first_name: str):
 
         if isinstance(first_name, str):
             self.first_name = first_name
@@ -34,7 +34,7 @@ class Person:
         else:
             print("The entered name is not a string!")
     
-    def setLastName(self, last_name: str):
+    def set_last_name(self, last_name: str):
 
         if isinstance(last_name, str):
             self.last_name = last_name
@@ -42,7 +42,7 @@ class Person:
         else:
             print("The entered last name is not a string!")
     
-    def setAge(self, age: int):
+    def set_age(self, age: int):
 
         if isinstance(age, int):
             self.age = age
@@ -50,17 +50,14 @@ class Person:
         else:
             print("The age must be an integer!")
     
-    def getName(self) -> str:
+    def get_name(self) -> str:
         return self.first_name
     
-    def getLastName(self) -> str:
+    def get_last_name(self) -> str:
         return self.last_name
     
-    def getAge(self) -> int:
+    def get_age(self) -> int:
         return self.age
     
     def greet(self) -> str:
         print(f"Hi, I'm {self.first_name} {self.last_name}! I'm {self.age} years old!")
-
-
-
