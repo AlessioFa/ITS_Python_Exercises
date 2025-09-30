@@ -52,11 +52,7 @@ percentage_cross: int = (coin_cross / total_coin_toss) * 100
 print(f"Total 'head': {coin_head} \nPercentage 'head': {percentace_head}%")
 print(f"Total 'cross': {coin_cross} \nPercentage 'cross': {percentage_cross}%") 
 
-
-
-
-
-
+# --------------------------
 
 coin_head: int = 0
 coin_cross: int = 0

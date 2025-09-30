@@ -6,7 +6,7 @@ def make_album(artist_name: str, album_title: str, songs_count=None) -> dict[str
         "artist_name": artist_name,
         "album_title": album_title,
     }
-   
+
     # If a song count is provided, add it to the dictionary
     if songs_count:
         album_info["songs_count"] = songs_count

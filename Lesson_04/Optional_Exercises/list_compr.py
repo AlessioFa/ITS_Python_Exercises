@@ -8,7 +8,6 @@ first_compr: list[int] = [n * n for n in numbers]
 
 print(first_compr)
 
-    
 
 """Numeri al quadrato
 Data una lista di numeri [1, 2, 3, 4, 5], crea una nuova lista con i quadrati dei numeri."""
@@ -30,14 +29,11 @@ even_numbers: list[int] = [n for n in numbers2 if n % 2 == 0]
 print(even_numbers)
 
 
-
 """
 Lunghezza delle parole
 Data una lista di parole ["apple", "banana", "kiwi"], crea una lista con la lunghezza di ogni parola."""
-
 
 words: list[str] = ["apple", "banana", "kiwi"]
 
 for word in words:
     print(len(word), end="")
-

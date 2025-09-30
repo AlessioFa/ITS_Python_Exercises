@@ -30,6 +30,3 @@ def sum4(nMin: int, nMax: int):
 
 
 print(sum4(1,10))
-
-
-    

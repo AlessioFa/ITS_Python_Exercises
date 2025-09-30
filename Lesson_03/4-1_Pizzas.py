@@ -16,8 +16,8 @@ print("I really love pizza!")
 
 
 # Solve the exercise using while loop
-
 i = 1 
+
 while i < len(favorite_pizzas):
     print()
     i += 1

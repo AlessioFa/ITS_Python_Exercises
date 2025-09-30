@@ -37,4 +37,4 @@ for item, price in client_order.items():
 
 
 total_price = sum(client_order.values())
-print(f"\nThis is the price the client has to pay: {total_price}")
+print(f"\nThis is the price the client has to pay: {total_price}$")

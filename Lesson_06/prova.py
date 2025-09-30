@@ -7,10 +7,10 @@ class Libro:
     def set_titolo(self, titolo: str) -> None:
         self.titolo =  titolo
     
-    def set_autore(self, nome:str) -> None:
+    def set_autore(self, nome: str) -> None:
         self.autore = nome
     
-    def set_genere(self, tipo_genere:list[str]) -> None:
+    def set_genere(self, tipo_genere: list[str]) -> None:
         self.genere = tipo_genere
     
     def get_titolo(self) -> str:
@@ -27,7 +27,7 @@ class Biblioteca:
     def __init__(self):
         self.libri: list[Libro] = []
     
-    def add_libro(self, libro:Libro) -> None:
+    def add_libro(self, libro: Libro) -> None:
         self.libri.append(Libro)
 
     def get_titolo(self) -> None:
@@ -37,10 +37,10 @@ class Biblioteca:
 
 # codice driver
 
-collezione:Biblioteca = Biblioteca()
+collezione: Biblioteca = Biblioteca()
 
 #LIbro1
-libro1:Libro = Libro()
+libro1: Libro = Libro()
 
 libro1.set_titolo("Il piccolo principe")
 
@@ -51,7 +51,7 @@ libro1.set_genere(["Narrativa"])
 collezione.add_libro(libro1)
 
 # Libro 2
-libro2:Libro = Libro()
+libro2: Libro = Libro()
 
 libro2.set_titolo("Harry Potter")
 

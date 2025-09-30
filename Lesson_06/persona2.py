@@ -1,5 +1,5 @@
 class Persona:
-    def __init__ (self) -> None:
+    def __init__(self) -> None:
         
         self.name: str = ""
         self.last_name = ""
@@ -11,7 +11,7 @@ class Persona:
         print(f"Name: {self.name}\nLast name: {self.last_name}\nAge: {self.age}")
 
     
-    def setName(self, name:str) -> None:
+    def setName(self, name: str) -> None:
         self.name = name
     
     def setLastname(self, last_name: str) -> None:
@@ -21,5 +21,3 @@ class Persona:
         if age < 0 or age > 130:
             self.age = 0
         self.age: int = age
-    
-    

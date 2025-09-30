@@ -9,5 +9,9 @@ print(f"{names[0]}, {names[1]}, {names[2]}")
 
 # Solving the exercise using a for loop
 # Iterating thorugh the list using a for loop and printing each name
+n: int = 1
+
 for name in names:
-    print(name)
+    print(f"Name {n}:{name}")
+
+    n += 1

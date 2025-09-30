@@ -73,13 +73,4 @@ for city in cities:
 # Eliminate the list cities
 del (cities)
 
-print(cities)
-
-
-
-
-
-
-
-
-
+print(cities_2)

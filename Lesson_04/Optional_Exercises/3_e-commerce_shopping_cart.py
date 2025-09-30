@@ -91,21 +91,11 @@ def cart_total(cart_list: list):
 
     print(f"Your cart's total is: {total_price:.2f}£")
 
-
-
     total_product_in_cart = 0
 
     for product in cart_list:
 
         total_product_in_cart += product["Quantity"]
-
-
-    
-
-
-
-    
-
 
 
 carrello = manage_shopping_cart()
